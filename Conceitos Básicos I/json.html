@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
+   <title>Json</title>
+</head>
+<body>
+    <h1>Json</h1>
+
+    <div>
+        Nome: <input type="text" id="nome"><br><br>
+        Sobrenome: <input type="text" id="sobr"><br><br>
+        Telefone: <input type="number" id="tel"><br><br>
+        <button onclick="gerarJson();">Enviar</button>
+        <span id="resultado"></span>       
+    </div>
+
+    <script>
+        function gerarJson() {
+            var vDados = {"nome":'', "sobrenome":'', "telefone":''};
+
+            vDados.nome = document.getElementById('nome').value;
+            vDados.sobrenome = document.getElementById('sobr').value;
+            vDados.telefone = document.getElementById('tel').value;
+
+            var vResultadoJson = '';
+            if(vDados.nome!='' && vDados.sobrenome!='' && vDados.telefone!=''){
+                vResultadoJson = JSON.stringify(vDados);
+            }else{
+                vResultadoJson = 'Não foi possível gerar o arquivo Json. Preencha todos os campos';
+            }
+            
+            vResultadoTela = document.getElementById('resultado');
+            vResultadoTela.innerHTML = vResultadoJson;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variáveis</title>
+</head>
+<body>
+    <h1>Escopo de Variáveis</h1>
+
+    <script>
+        //Escopo de Variáveis
+
+        var teste = 42; // Variavel Global
+
+        function somar(num1, num2){            
+            var valor = 5; //variável local (só é reconhecida dentro do bloco da função)
+            return valor + num1 + num2;
+        }
+
+        for (var i = 0; i < 5; i++) {
+            var outraVariavel = 5; // Variavel Global
+            console.log(i * outraVariavel);            
+        }
+
+        console.log(somar(4, 6));
+
+        for (var y = 0; y < 5; y++) {
+            let umaVariavel = 12; // Let deixa a variável local
+            console.log(y * umaVariavel)            
+        }
+
+    </script>
+</body>
+</html>

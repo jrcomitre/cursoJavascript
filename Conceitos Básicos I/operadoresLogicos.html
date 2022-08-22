@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <h1>Operadores Lógicos</h1>
+    <script>
+        
+        //Operadores Lógicos
+        var curso = 'JavaScript';
+        var legal = false;
+
+        //And ( e = Ambas expressões são verdadeiras)
+        if (curso === 'JavaScript' && legal == true) {
+            console.log('O curso de JavaScript é legal!');
+        }else{
+            console.log('O curso não é de JavaScript ou não é legal!');
+        }
+
+        //Or (ou = Pelo menos uma expressão deve ser verdadeira)
+        if(curso == 'JavaScript' || legal === true){
+            console.log('O curso de JavaScript é legal.')
+        }else{
+            console.log('O curso não é de JavaScript ou não é legal')
+        }
+
+        //Not (Para fazer uma negação ou verificar algo que não é esperado)
+        if(curso != 'JavaScript'){
+            console.log('O curso não é JavaScript');
+        }else{
+            console.log('O curso é JavaScript');
+        }
+
+    </script>
+    
+    
+</body>
+</html>
