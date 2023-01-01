@@ -8,6 +8,20 @@ let a = document.querySelector('.link');
 
 // console.log(a.parentNode.parentNode.parentNode) //Document
 
-console.log(a.parentNode.parentNode.parentNode .parentNode) //null
+// console.log(a.parentNode.parentNode.parentNode .parentNode) //null
 
-console.log(a.parentNode.parentNode.childNodes)
+// console.log(a.parentNode.parentNode.childNodes)
+
+// console.log(a.parentNode.parentNode.firstChild); //head
+
+// console.log(a.firstChild);
+
+// console.log(a.parentNode.parentNode.lastChild); //body
+
+// console.log(a.parentNode.parentNode.firstChild.nextSibling); // Proximo irmao body
+
+// console.log(a.parentNode.parentNode.firstChild.nextSibling.firstChild); // H1
+
+// console.log(a.parentNode.parentNode.firstChild.nextSibling.firstChild.nextSibling); //a
+
+// console.log(a.parentNode.parentNode.firstChild.nextSibling.previousSibling); // head
